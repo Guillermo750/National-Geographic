@@ -1,19 +1,19 @@
 <!-- MENÚ -->
 <body class="m-0 bg-white">
     <!-- BARRA SUPERIOR -->
-    <div class="h-11 bg-black border-b-[3px] border-natgeo">
-        <div class="mx-auto h-full max-w-[1180px] flex items-center">
+    <div class="h-11 bg-black">
+        <div class="mx-auto h-full max-w-[1028px] flex items-center">
             <!-- Noticias -->
-            <div class="flex items-center gap-6 overflow-x-auto whitespace-nowrap scrollbar-hide px-4 lg:px-0 text-[14px] font-medium 
+            <div class="flex items-center gap-4 whitespace-nowrap scrollbar-hide px-4 lg:px-0 text-[14px]
                 text-white">
-                <a href="#" class="hover:underline hover:decoration-[rgb(254,206,0)] hover:underline-offset-4">Macro tormenta</a>
-                <a href="#" class="hover:underline hover:decoration-[rgb(254,206,0)] hover:underline-offset-4">Inyección letal</a>
-                <a href="#" class="hover:underline hover:decoration-[rgb(254,206,0)] hover:underline-offset-4">Nobel Química</a>
-                <a href="#" class="hover:underline hover:decoration-[rgb(254,206,0)] hover:underline-offset-4">Fotografía ADN</a>
-                <a href="#" class="hover:underline hover:decoration-[rgb(254,206,0)] hover:underline-offset-4">Antártida hielo</a>
-                <a href="#" class="hover:underline hover:decoration-[rgb(254,206,0)] hover:underline-offset-4">Aristóteles vivienda</a>
-                <a href="#" class="hover:underline hover:decoration-[rgb(254,206,0)] hover:underline-offset-4">Roban libro Dalí</a>
-                <a href="#" class="hover:underline hover:decoration-[rgb(254,206,0)] hover:underline-offset-4">Edad Media agua</a>
+                <a href="#" class="hover:underline hover:decoration-[rgb(254,206,0)] hover:underline-offset-4">Colmillo narval</a>
+                <a href="#" class="hover:underline hover:decoration-[rgb(254,206,0)] hover:underline-offset-4">Nobel de la Paz</a>
+                <a href="#" class="hover:underline hover:decoration-[rgb(254,206,0)] hover:underline-offset-4">Wilhelm Röntgen</a>
+                <a href="#" class="hover:underline hover:decoration-[rgb(254,206,0)] hover:underline-offset-4">Fotos NASA</a>
+                <a href="#" class="hover:underline hover:decoration-[rgb(254,206,0)] hover:underline-offset-4">Romanos tormentas</a>
+                <a href="#" class="hover:underline hover:decoration-[rgb(254,206,0)] hover:underline-offset-4">Corsario Moctezuma</a>
+                <a href="#" class="hover:underline hover:decoration-[rgb(254,206,0)] hover:underline-offset-4">Borgia</a>
+                <a href="#" class="hover:underline hover:decoration-[rgb(254,206,0)] hover:underline-offset-4">Peste España</a>
 
                 <!-- Login -->
                 <a href="#" class="ml-auto flex shrink-0 items-center gap-2 text-natgeo text-[rgb(254,206,0)] transition">
@@ -26,18 +26,20 @@
     </div>
 
     <!-- HEADER PRINCIPAL -->
-    <header class="bg-white">
-        <div class="mx-auto flex h-20 max-w-[1180px] items-center px-4 lg:px-0">
+    <header class="relative z-50 w-full border-t-[3px] border-[rgb(254,206,0)] bg-white">
+        <div class="mx-auto flex h-16 w-full max-w-[1028px] items-center px-4 sm:px-5 lg:px-0 gap-3">
             <!-- HAMBURGUESA -->
-            <button id="mobileMenuButton" type="button" aria-label="Abrir menú" class="mr-8 flex h-8 w-8 shrink-0 flex-col justify-center gap-3">
+            <button id="mobileMenuButton" type="button" aria-label="Abrir menú" 
+            class="flex h-8 w-7 shrink-0 items-center justify-center lg:mr-4">
                 <i class="fa-solid fa-bars text-3xl" style="color: rgb(0, 0, 0);"></i>
             </button>
 
             <!-- LOGO -->
-            <a href="/pages/animales.php"><img src="/logo/logo-white.webp" alt="National Geographic España" class="w-28 sm:w-36"></a>
+            <a href="/pages/animales.php" class="block w-28 shrink-0 sm:w-30 lg:w-35"><img src="/logo/logo-white.webp" 
+                alt="National Geographic España" class="block h-auto w-full"></a>
             
             <!-- NAVEGACIÓN DESKTOP -->
-            <nav id="desktopNavigation" class="ml-8 hidden h-full items-center gap-8 lg:flex">
+            <nav id="desktopNavigation" class="ml-7 hidden h-full flex-1 items-center justify-between lg:flex gap-8">
                 <!-- CIENCIA -->
                 <div class="relative h-full flex items-center">
                     <a href="javascript:void(0)" data-dropdown="ciencia" class="dropdown-button flex items-center gap-1 text-[17px] font-normal
@@ -79,10 +81,10 @@
 
                 <!-- MEDIO AMBIENTE -->
                 <div class="relative h-full flex items-center">
-                    <a href="javascript:void(0)" data-dropdown="animales" class="dropdown-button flex items-center gap-1 text-[17px] font-normal
+                    <a href="javascript:void(0)" data-dropdown="medioambiente" class="dropdown-button flex items-center gap-1 text-[17px] font-normal
                         cursor-pointer">MEDIO AMBIENTE<i class="fa-solid fa-angle-down text-[rgb(164,164,164)] text-[13px]"></i></a>
-                    <!-- Submenú Animales -->
-                    <div id="dropdown-animales" class="dropdown-menu invisible absolute left-0 top-17.5 z-50 w-57.5 translate-y-2 opacity-0
+                    <!-- Submenú medioambiente -->
+                    <div id="dropdown-medioambiente" class="dropdown-menu invisible absolute left-0 top-17.5 z-50 w-57.5 translate-y-2 opacity-0
                         border-t-[3px] bg-white">
                         <a href="#" class="block px-5 py-3 text-s hover:underline hover:decoration-zinc-400 hover:underline-offset-4">
                             Iniciativas para cambiar el mundo</a>
@@ -104,8 +106,9 @@
                 </div>
 
                 <!-- SUSCRÍBETE-->
-                <a href="#" class="ml-auto flex h-10 shrink-0 items-center justify-center px-5 text-[17px] font-medium 
-                bg-[rgb(254,206,0)] text-black hover:bg-black hover:text-[rgb(254,206,0)] transition">SUSCRÍBETE</a>
+                <a href="#" class="ml-auto flex h-9 shrink-0 items-center justify-center px-5 text-[15px] font-medium 
+                bg-[rgb(254,206,0)] text-black hover:bg-black hover:text-[rgb(254,206,0)] transition
+                sm:px-5  lg:ml-5 lg:h-10 lg:px-5">SUSCRÍBETE</a>
             </nav>
         </div>
 
