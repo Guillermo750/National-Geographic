@@ -1,11 +1,11 @@
 <!-- MENÚ -->
 <body class="m-0 bg-white">
     <!-- BARRA SUPERIOR -->
-    <div class="h-11 bg-black">
-        <div class="mx-auto h-full max-w-[1028px] flex items-center">
+    <div class="h-11 w-full overflow-hidden bg-black">
+        <div class="mx-auto flex h-full w-full max-w-[1028px] items-center overflow-hidden">
             <!-- Noticias -->
-            <div class="flex items-center gap-4 whitespace-nowrap scrollbar-hide px-4 lg:px-0 text-[14px]
-                text-white">
+            <div class="flex h-full min-w-0 items-center gap-4 overflow-x-auto whitespace-nowrap px-4 text-[14px] text-white scrollbar-hide 
+                lg:px-0">
                 <a href="#" class="hover:underline hover:decoration-[rgb(254,206,0)] hover:underline-offset-4">Colmillo narval</a>
                 <a href="#" class="hover:underline hover:decoration-[rgb(254,206,0)] hover:underline-offset-4">Nobel de la Paz</a>
                 <a href="#" class="hover:underline hover:decoration-[rgb(254,206,0)] hover:underline-offset-4">Wilhelm Röntgen</a>
@@ -35,8 +35,13 @@
             </button>
 
             <!-- LOGO -->
-            <a href="/pages/animales.php" class="block w-28 shrink-0 sm:w-30 lg:w-35"><img src="/logo/logo-white.webp" 
+            <a href="/pages/animales.php" class="block w-[95px] shrink-0 sm:w-36 lg:w-36"><img src="/logo/logo-white.webp" 
                 alt="National Geographic España" class="block h-auto w-full"></a>
+            
+            <!-- SUSCRÍBETE MÓVIL -->
+            <a href="#" class="ml-auto inline-flex h-9 shrink-0 items-center justify-center whitespace-nowrap bg-[rgb(254,206,0)] px-2 
+                text-[15px] font-medium text-black transition hover:bg-black hover:text-[rgb(254,206,0)] sm:px-3 lg:hidden">SUSCRÍBETE
+            </a>
             
             <!-- NAVEGACIÓN DESKTOP -->
             <nav id="desktopNavigation" class="ml-7 hidden h-full flex-1 items-center justify-between lg:flex gap-8">
@@ -154,3 +159,4 @@
             </nav>
         </div>
     </header>
+</body>
